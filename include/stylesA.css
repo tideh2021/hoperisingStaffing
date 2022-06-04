@@ -1,0 +1,664 @@
+
+  :root {
+    --myRed1: #fd0a0a;
+    /*Green  */
+    --myGreen: #37af65;
+    --myGreen2: #008000;
+    /* Blue */
+    --myBlue: rgb(0, 110, 255);
+    --myBluelight1: #a5ccf3;
+    --myBluelight2: #306091;
+    --myBlueP: rgb(76, 68, 148, 0.4);
+    --myBluePOpacity: rgb(76, 68, 148, 0.6);
+    --myNavyblue: #0a0a3a;
+
+    /* white */
+    --myWhite: #ffffff;
+    /* Black */
+    --myBlack: #000000;
+    --myGray1: #838181;
+    /* Oramge */
+    --myOrange: #ffa500;
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+
+  body {
+    /* display: block; */
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    /* background-color: white; */
+  }
+
+  header {
+
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    background-color: #000;
+    /* justify-content: center; */
+    align-items: center; 
+    /* justify-content: space-between; */
+    gap: 40px;
+    z-index: 100;
+  }
+
+  .logo {
+    display: flex;
+    width: 24%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .logo h1 {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    font-family: tekton-pro, sans-serif;
+    margin-right: 0;
+  }
+
+  .logo a {
+    text-decoration: none;
+  }
+
+  .logo p {
+    font-family: tekton-pro, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    margin-top: -.5em;
+    color: var(--myOrange);
+    text-decoration: none;
+    margin-right: 0;
+  }
+
+     .nav-a {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 10px;
+    width: 60%;
+    justify-content: space-around;
+   margin-right: 20px;
+    padding-right: 20px;
+  } 
+
+.nav-a a {
+  font-size: 18px;
+  color: var(--myWhite);
+  /* color: black; */
+  text-transform: uppercase;
+  text-decoration: none;
+  align-self: center;
+}
+
+.hamburger {
+  display: none;
+   background-color: transparent;
+  border: 0;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  margin-top: 20px;
+  width: 5%; 
+  margin-right: 0;
+   }
+
+ .times {
+   display: none;
+  font-size: 55px;
+  color: white;
+  cursor: pointer;
+  margin-top: 20px;
+  margin-left: -2em; 
+  width: 5%;
+ }  
+.hamburger:focus {
+  outline: none;
+} 
+ 
+   .slider-sect {
+    display: flex;
+    position: relative;
+    top: 100px;
+    margin-bottom: 20px;
+    padding-top: 50px;
+  } 
+
+  /* about sect starts */
+   .about-sect {
+    display: block;
+    max-width: 1060px;
+    height: auto;
+    margin-top: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px 40px;
+    background-color: #d2c8b7;
+    border-radius: 10px;
+  } 
+
+  .about-sect h1 {
+    text-align: center;
+    margin-top: 60px;
+    margin-bottom: 40px;
+  } 
+
+  /* Testimonials section */
+   .testimonial-title {
+    color: var(--myOrange);
+    max-width: 1060px;
+    margin: 90px auto 2px auto;
+    text-transform: capitalize;
+    text-align: center;
+  } 
+
+   .testimonials {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+  } 
+
+  .testimonials .wrapper {
+    max-width: 1060px;
+    margin: 0 auto auto auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: rgb(54, 92, 126);
+    border-radius: 10px;
+  }
+
+  .testimonials .wrapper .box {
+    background: #fff;
+    width: calc(30% - 10px);
+    padding: 25px;
+    border-radius: 3px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+  }
+
+  .testimonials .wrapper .box i.quote {
+    font-size: 20px;
+    color: #17a2b8;
+  }
+
+  .testimonials .wrapper .box .content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 10px;
+  }
+
+  .testimonials .box .info .name {
+    font-weight: 600;
+    font-size: 17px;
+  }
+
+  .testimonials .box .info .job {
+    font-size: 16px;
+    font-weight: 500;
+    color: #17a2b8;
+  }
+
+  .testimonials .box .info .stars {
+    margin-top: 2px;
+  }
+
+  .testimonials .box .info .stars i {
+    color: goldenrod;
+  }
+
+  /* navbar display onclick */
+   .navbarDisp {
+    display: block;
+    width: 160px;
+    height: 200px;
+    padding-top: 16px;
+    padding-left: 5px;
+    margin-top: -2.2rem;
+    background-color: #000;
+  } 
+
+  /* Form Begins */
+    /* employer wrapper start */
+    .employer-wrapper {
+      position:relative;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      width: 100vw;
+      height: 900px;
+      top: 60px;
+      padding: 30px;
+      margin-bottom: 40px;
+      margin-left:  auto; 
+      margin-right: auto;
+    }
+ 
+/* Form starts */
+.employer-sect {
+  position: relative;
+  width: 360px;
+  height: 700px;
+  bottom: 20px;
+  top: 40px;
+}
+
+  /* Form starts */
+ .employer-sect {
+    position: relative;
+    width: 360px;
+    height: 700px;
+    bottom: 20px;
+    top: 120px;
+  } 
+
+   .employer-sect .container {
+   position: relative;
+    display: flex;
+    flex-direction: column;
+    top: 20px;
+    width: 320px;
+    height: 760px;
+    padding-top: 20px;
+     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    background-color: #667b90;
+  }
+
+  .employer-sect .header {
+    width: 100%;
+    height: 22px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #e2e1e1;
+    border-bottom: 1px solid #f0f0f0;
+    text-align: center;
+    border-radius: 30%;
+  }  
+.employer-text {
+  width: 30%;
+  height: 900px;
+}
+  .employer-text h1 {
+    margin-top: 60px;
+    color: green;
+  }
+    .workers-header h1{
+     color: black;
+    }
+  .container .header h2 {
+    font-size: 20px;
+    margin: 0;
+  }
+  .form {
+    display: block;
+    padding: 10px 10px;
+    margin-bottom: 20px;
+  }
+
+  .form-control1 {
+    margin-bottom: 5px;
+    padding-bottom: 20px;
+    position: relative;
+  }
+
+  .form-control1 label {
+    display: inline-block;
+    margin-bottom: 3px;
+  }
+
+  .form-control1 input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    width: 100%;
+    font-family: inherit;
+    font-size: 14px;
+    padding: 5px;
+  }
+
+  .form-control1 i {
+    position: absolute;
+    top: 40px;
+    right: 10px;
+    visibility: hidden;
+    /*hides the icon by default */
+   } 
+
+   .form-control1 small {
+    position: absolute; 
+    /*Removes vertical spaces between each input box */
+     bottom: 0;
+    left: 0;
+    visibility: hidden; 
+    /*Hides the small text "Error message' */
+  }
+
+  textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    border-radius: 5px;
+  }
+
+  .file-div label {
+    font-weight: bold;
+    color: #000000;
+  }
+
+  .file-div input[type="file"] {
+    border-radius: 4px;
+  } 
+
+  .file-div #userfile:hover {
+    cursor: pointer;
+  }
+
+  .form button {
+    background-color: #008000;
+    border: 2px solid #008000;
+    color: #fff;
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: inherit;
+    border-radius: 4px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+.map-addr {
+  position: relative;
+  display: block;
+  width: 30%;
+  height: auto;
+}
+.map-addr .logo {
+  display: block;
+  width: 100%;
+  margin-top: 60px;
+
+}
+  .map-addr .logo h1 {
+    color: #000000;
+
+  }
+
+  iframe {
+    border: 1px solid #c5c4c4;
+    margin-top: 20px;
+    border-radius: 6px;
+    width: 400px;
+    height: 450px;
+  
+  } 
+
+  /*class success and error are added with javascript */
+   .form-control1.success input {
+    border-color: #2ecc71;
+  }
+
+  .form-control1.error input {
+    border-color: #e74c3c;
+  }
+
+  .form-control1.success i.fa-check-circle {
+    visibility: visible;
+    color: #2ecc71;
+  }
+
+  .form-control1.error i.fa-exclamation-circle {
+    visibility: visible;
+    color: #e74c3c;
+  }
+
+  .form-control1.error small {
+    visibility: visible;
+    color: #e74c3c;
+  } 
+
+  /* End form */
+
+  /* Footer start */
+  footer {
+    display: block;
+    width: 100%;
+    height: 120px;
+    margin-top: 50px;
+    position: absolute;
+    background-color: #010101;
+    margin-bottom: 0;
+  }
+
+  #footer-div {
+    width: 100%;
+    height: auto;
+  }
+
+  #coy-name {
+    position: relative;
+    width: 40%;
+    padding-left: 20px;
+  }
+#coy-name h1 {
+  width: 60%;
+  font-size: 16px;
+  color: white;
+  padding-top: 20px;
+  text-decoration: none;
+  font-family: tekton-pro, sans-serif;
+}
+
+  #footer-nav {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    float: right;
+    margin-top: -2.3em;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  #footer-nav li {
+    list-style-type: none;
+  }
+
+  #footer-nav a {
+    text-decoration: none;
+    color: white;
+  }
+
+  #footer-nav img {
+    width: 30px;
+    height: 30px;
+  }
+
+  #footer-p {
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    margin-top: 5px;
+    padding-left: 20px;
+  } 
+   #footer-p a {
+    padding-top: 20px;
+    padding-left: 5%;
+    text-decoration: none;
+    float: left;
+    font-size: 8px;
+  }
+
+  .object {
+    display: block;
+    width: 500px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  } 
+
+ 
+
+ @media screen and (max-width: 1162px) {
+
+  .nav-a a {
+    font-size: 12px;
+  }
+} 
+
+  @media screen and (max-width: 886px) {
+    .hamburger {
+      display: block;
+      margin-bottom: 0;
+      padding-left: 12px;
+      width: 160px;
+    }
+   header .logo {
+      width: 100%;
+    }
+ .times {
+   display: none; 
+   padding-left: 120px;
+   margin-top: -1.1em;
+   width: 160px;
+ }
+
+    .slider-sect .container {
+      height: 100px;
+      margin-bottom: 10px;
+    }
+
+    .about-sect {
+      margin-top: 150px;
+    }
+
+    .nav-a {
+      display: none;
+      width: 120px;
+      height: 200px;
+      padding-top: 10px;
+      padding-left: 5px;
+      margin-top: -3rem;
+      text-align: center;
+      background-color: #000;
+    }
+  }
+  @media screen and (max-width: 768px) {
+   .employer-wrapper {
+      width: 100vw;
+      display: flex;
+      flex-wrap: wrap;
+      height: auto;
+      background-color: #0a0a3a;
+    }
+.employer-text,
+.employer-sect {
+  width: 100%;
+  height: auto;
+}
+.employer-sect .container {
+  width: 100%;
+}
+iframe {
+  width: 100%;
+  height: 300px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+ .map-addr {
+  width: 100%;
+  color: red;
+  margin: 80px auto;
+}
+  }
+
+  @media screen and (max-width: 680px) {
+    .testimonials .wrapper .box {
+      width: 100%;
+    }
+
+    .logo h1 {
+      font-size: 16px;
+    }
+
+    header {
+      display: block;
+      width: 100%;
+      padding-left: 0;
+    }
+
+    .hamburger {
+      display: block;
+      margin-bottom: 0;
+      margin-top: -3rem;
+      padding-left: 12px;
+      width: 160px;
+    }
+
+    .slider-sect {
+      height: 320px;
+    }
+
+    .about-sect {
+      margin-top: 20px;
+    }
+
+    #footer-nav {
+      display: block;
+      margin-top: -.4em;
+    }
+
+    #coy-name h1 {
+      width: 100%;
+      padding-top: 5px;
+      padding-left: 5px;
+    }
+
+    footer {
+      position: relative;
+      display: block;
+      width: 100%;
+      height: 140px;
+      bottom: 0;
+    }
+  #coy-name, #footer-nav {
+    width: 100%;
+  }
+    #footer-nav img {
+      width: 20px;
+      height: 20px;
+    }
+   #footer-nav a{
+     margin-bottom: 6px;
+   }
+    #footer-p {
+      width: 100%;
+      display: block;
+      padding-top: 46px;
+      padding-bottom: 1px;
+      margin-top: 30px;
+    }
+
+    #footer-p a {
+      padding-top: 2px;
+     font-size: 6px;
+    }
+  }
