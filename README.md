@@ -1,3 +1,4 @@
 # hoperisingStaffing
 
-PHP is used for the contact form
+Because PHP is used for the contact form, all the file were converted to .php
+
